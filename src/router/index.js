@@ -23,6 +23,14 @@ export default new Router({
       path: '/' ,
       name: 'Home',
       component: Home,
+      // props: true,
+      // beforeEnter: (to, from, next) => {
+      //   if(to.params.name) {
+      //     next();
+      //   } else {
+      //     next({name: 'Login'})
+      //   }
+      // }
     }
   ]
 })
