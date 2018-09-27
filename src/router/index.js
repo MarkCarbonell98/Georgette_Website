@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import SignUp from '@/components/autentication/SignUp'
 import Login from '@/components/autentication/Login'
 import Home from '@/components/landingPage/Home'
+import About from '@/components/landingPage/About'
 
 Vue.use(Router)
 
@@ -31,6 +32,11 @@ export default new Router({
       //     next({name: 'Login'})
       //   }
       // }
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: About,
     }
   ]
 })

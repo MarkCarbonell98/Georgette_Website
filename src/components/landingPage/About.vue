@@ -1,13 +1,11 @@
 <template>
-    <div>Esta es la homepage
-        <img src="@/assets/img/world-image.jpg" alt="">
-    </div>
+    <div>Esta es la Seccion de About</div>
 </template>
 
 <script>
-import isLoggedIn from './About'
 export default {
     name: 'Home',
+    props: ['isLoggedIn'],
     created() {
         console.log(this.$props);
     }

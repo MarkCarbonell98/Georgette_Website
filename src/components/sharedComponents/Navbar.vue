@@ -1,10 +1,10 @@
 <template>
     <div class="navbar-container">
         <nav class="navbar">
-            <img src="@/assets/apple-logo.png" alt="" class="logo">
+            <img src="@/assets/img/apple-logo.png" alt="" class="logo">
             <ul class="nav-links-container">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
+                <li><router-link :to="{name: 'Home'}">Home</router-link></li>
+                <li><router-link :to="{name: 'About'}">About</router-link></li>
                 <li><a href="">Contact</a></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">Videos</a></li>
@@ -22,9 +22,9 @@ export default {
     name: 'Navbar',
     data() {
         return {
-            
+            signedIn: false,
             }
-    }
+        }
 
 }
 </script>
@@ -33,14 +33,13 @@ export default {
     .navbar-container {
         display: block;
         background-color: gainsboro;
-        padding: 15px;
-        height: 100px;
     }
 
     .navbar {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        height: 100px;
     }
 
     .logo{

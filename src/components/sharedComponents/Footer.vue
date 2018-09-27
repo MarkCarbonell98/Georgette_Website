@@ -2,12 +2,12 @@
     <footer class="footer">
         <h3>&copy; Georgette Website All Rights Reserved</h3>    
         <ul class="social-media-icons">
-            <li><i class="medium material-icons">explore</i></li>
-            <li><i class="medium material-icons">business_center</i></li>
-            <li><i class="medium material-icons">favorite</i></li>
-            <li><i class="medium material-icons">directions_run</i></li>
+            <li><i class="small material-icons">explore</i></li>
+            <li><i class="small material-icons">business_center</i></li>
+            <li><i class="small material-icons">favorite</i></li>
+            <li><i class="small material-icons">directions_run</i></li>
         </ul>
-    </footer>    
+    </footer>
 </template>
 
 <script>
@@ -39,7 +39,7 @@ export default {
     }
 
     .social-media-icons>li {
-         margin: 0 8px;
+        margin: 0 8px;
     }
 </style>
 
